@@ -37,3 +37,4 @@ func create_map_control() -> Control:
 func build_meshes():
 	var loader = editing_loader.get_ref()
 	loader.build_meshes()
+	EditorInterface.mark_scene_as_unsaved()
